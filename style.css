@@ -1,30 +1,114 @@
+*{
+    /* background-color: aquamarine; */
+
+}
+html{
+    background: fuchsia;
+    font-size: 50px;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: fuchsia;
+    background-image: url('./pexels-hitesh-choudhary-693859.jpg');
+}
 p{
 background-color: #fe6130;
 
 }
-.img-container{
-    width:100vw;
-    height:100vh;
+.paragraph{
+    width:200px;
+    height:200px;
 }
-.img-container img{
+.img-container{
+    width:100%;
+    height:100%;
+}
+/* .img-container img{
     width:100%;
     height: 100%;
-}
+} */
 .overlay{
-    z-index:+1;
     background-color: black;
     width: 100%;
     height:100%;
     opacity:.7;
+    position:absolute;
+    top:0;
 }
 .head{
     height:100vh;
     width:100vw;
+}
+.pos{
+    position:fixed;
+    bottom:60px;
+    right:70px;
+}
+/* div{
+    width:150px;
+    height:150px;
+    /* color:green; */
+/* } */ 
+/* specificity-11 */
+div.container{ 
+    background:orange;
+}
+#container-1{
+    background:red;
+    background-color: rgb(81, 8, 71) !important ;
+}
+img{
+    display:inline;
+    width:150px;
+    height:150px;
+    margin-left: auto;
+    margin-right:auto;
+    float:center;
+}
+.image-container{
+    display:flex;
+    justify-content: center;
+width:100vw;
+}
+.okay{
+    width:200px;
+    height:200px;
+}
+.column p::first-letter{
+font-style: italic;
+color:green;
+font-size:0.5rem;
+}
+.column p::selection{
+    background-color: purple;
+
+}
+.column p::first-line{
+    color:#e53f01;
+}
+.column{
+  
+}
+img{
+    width: 500px;
+    height: 500px;
+    transform:  rotateY(-60deg) rotateX(-60deg);
 }
 /* 
 
 selector{
 property:value
 }
+specificity->{
+universal selector:0
+type:1
+attribute-selector/ class:10 
+id:100
+inline:1,000
+important:10,000
+}
+unit values -relative(%, Vh, vw, vmin, vmax), absolute(px, em, lh,ch, cap, ex)
 
 */
